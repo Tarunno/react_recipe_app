@@ -1,0 +1,29 @@
+.recipes-container{
+	width: 100%;
+	padding: 60px;
+}
+.gird-box{
+	max-width: 900px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	align-items: stretch;
+}
+
+@media screen and (max-width: 800px) {
+	.recipes-container{
+		padding: 40px;
+	}
+	.gird-box{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 510px) {
+	.recipes-container{
+		padding: 40px;
+	}
+	.gird-box{
+		grid-template-columns: 1fr;
+	}
+}
